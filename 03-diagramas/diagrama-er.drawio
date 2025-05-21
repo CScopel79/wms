@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="DER - Banco de Dados">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Products -->
+        <mxCell id="2" value="Products(Id*, Code, Name, Description, Weight, Volume, Perishable, TemperatureControlled, CreatedAt, UpdatedAt)" style="rectangle" vertex="1" parent="1" mxGeometry="{'x':20,'y':20,'width':200,'height':100}"/>
+
+        <!-- Lots -->
+        <mxCell id="3" value="Lots(Id*, ProductId*, Number, ManufacturingDate, ExpirationDate, Status, Quantity)" style="rectangle" vertex="1" parent="1" mxGeometry="{'x':250,'y':20,'width':200,'height':100}"/>
+
+        <!-- Locations -->
+        <mxCell id="4" value="Locations(Id*, Area, Aisle, Shelf, Position, MaxCapacity)" style="rectangle" vertex="1" parent="1" mxGeometry="{'x':480,'y':20,'width':200,'height':100}"/>
+
+        <!-- Inventory -->
+        <mxCell id="5" value="Inventory(Id*, ProductId*, LotId*, LocationId*, Quantity, LastUpdated)" style="rectangle" vertex="1" parent="1" mxGeometry="{'x':150,'y':150,'width':200,'height':100}"/>
+
+        <!-- RfidTags -->
+        <mxCell id="6" value="RfidTags(Id*, TagUid*, ProductId*, LotId*, AssignedTo, Active)" style="rectangle" vertex="1" parent="1" mxGeometry="{'x':400,'y':150,'width':200,'height':100}"/>
+
+        <!-- Users -->
+        <mxCell id="7" value="Users(Id*, Name, Email*, PasswordHash, Role, WarehouseId)" style="rectangle" vertex="1" parent="1" mxGeometry="{'x':300,'y':300,'width':200,'height':100}"/>
+
+        <!-- Linhas de relacionamento -->
+        <mxCell id="8" source="2" target="3" edge="1" parent="1" style="orthogonalEdgeStyle"/>
+        <mxCell id="9" source="2" target="5" edge="1" parent="1" style="orthogonalEdgeStyle"/>
+        <mxCell id="10" source="3" target="5" edge="1" parent="1" style="orthogonalEdgeStyle"/>
+        <mxCell id="11" source="4" target="5" edge="1" parent="1" style="orthogonalEdgeStyle"/>
+        <mxCell id="12" source="2" target="6" edge="1" parent="1" style="orthogonalEdgeStyle"/>
+        <mxCell id="13" source="3" target="6" edge="1" parent="1" style="orthogonalEdgeStyle"/>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
