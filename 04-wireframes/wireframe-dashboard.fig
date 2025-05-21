@@ -1,0 +1,38 @@
+# WMS Inteligente – Wireframe  
+## Tela Inicial – Dashboard Gerencial  
+
+### Layout Geral:
+
+- **Topo:**  
+  - Logo do sistema  
+  - Saudação do usuário logado  
+  - Ícone de notificação  
+
+- **Menu Lateral:**  
+  - Dashboard  
+  - Estoque  
+  - Movimentações  
+  - Inventário  
+  - Perfis de acesso  
+
+- **Conteúdo Principal:**
+
+#### 1. Indicadores em Cards
+| Card | Informação |
+|------|------------|
+| Precisão de Estoque | % correta vs física |
+| Tempo Médio Picking | Tempo médio por pedido |
+| Erros Recentes | Quantidade e tipo |
+| Temperatura Atual | °C (última leitura) |
+
+#### 2. Mapa do Armazém
+- Visualização simplificada das áreas
+- Locais destacados com estoque cheio ou crítico
+
+#### 3. Alertas em Tempo Real
+- Lista de alertas ativos
+- Prioridade visual (vermelho, amarelo, verde)
+- Botão de resolver
+
+#### 4. Ações Rápidas
+- Botões: Novo Pedido, Nova Tarefa, Relatório de Inventário
