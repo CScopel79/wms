@@ -1,0 +1,36 @@
+# WMS Inteligente – Wireframe  
+## Tela de Separação (Picking)  
+
+### Layout Geral:
+
+- **Topo:**  
+  - Logo do sistema  
+  - Nome do operador logado  
+  - Número da tarefa ativa  
+
+- **Título da tela:**  
+  - "Separação de Pedido"  
+
+- **Conteúdo Principal:**
+
+#### 1. Ordem de Separação
+- Número do pedido
+- Cliente
+- Itens solicitados:
+  - Código
+  - Nome
+  - Quantidade
+
+#### 2. Rota Otimizada
+- Mapa simplificado do armazém
+- Destaques nas posições dos itens
+- Setas indicando rota mais eficiente
+
+#### 3. Leitor RFID Integrado
+- Área destacada para validação de item coletado
+- Feedback visual: sucesso / erro
+
+#### 4. Finalização
+- Botão de “Finalizar Tarefa”
+- Tempo total gasto na separação
+- Histórico de últimos pedidos finalizados
