@@ -1,0 +1,40 @@
+# WMS Inteligente – Wireframe  
+## Tela de Torre de Controle  
+
+### Layout Geral:
+
+- **Topo:**  
+  - Logo do sistema  
+  - Saudação do supervisor  
+  - Última atualização em tempo real  
+
+- **Título da tela:**  
+  - "Central de Eventos e Alertas"  
+
+- **Conteúdo Principal:**
+
+#### 1. Lista de Alertas Ativos
+| Coluna | Conteúdo |
+|--------|----------|
+| Tipo   | Temperatura, estoque, RFID, etc. |
+| Prioridade | Alta / Média / Baixa |
+| Localização | Corredor, posição |
+| Status | Pendente / Em andamento / Resolvido |
+
+#### 2. Detalhes do Alerta Selecionado
+- Descrição completa do evento
+- Data/hora do alerta
+- Usuário responsável (se aplicável)
+- Ação sugerida pelo sistema
+
+#### 3. Histórico de Eventos
+- Tabela com todos os eventos resolvidos
+- Filtro por data, tipo e status
+
+#### 4. Notificações
+- Sistema de notificação em tempo real
+- Configurações de alerta personalizado
+
+#### 5. Ações
+- Botão para resolver alerta
+- Exportar relatório de eventos
