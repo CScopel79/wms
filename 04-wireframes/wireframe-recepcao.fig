@@ -1,0 +1,36 @@
+# WMS Inteligente – Wireframe  
+## Tela de Recepção com RFID  
+
+### Layout Geral:
+
+- **Topo:**  
+  - Logo do sistema  
+  - Saudação do operador  
+  - Data e hora atual  
+
+- **Título da tela:**  
+  - "Recepção de Mercadoria"  
+
+- **Conteúdo Principal:**
+
+#### 1. Campo de Leitura RFID
+- Caixa destacada para leitura automática
+- Opção de inserção manual (caso falhe leitura)
+- Ícone de status (sucesso/erro)
+
+#### 2. Detalhes do Pedido
+- Número do pedido de compra
+- Fornecedor
+- Itens previstos:
+  - Código
+  - Nome
+  - Quantidade
+
+#### 3. Registro Automático
+- Confirmação visual após leitura
+- Exibição de divergências (quantidade diferente, produto errado)
+- Botão de "Registrar Divergência"
+
+#### 4. Finalização
+- Botão grande de "Confirmar Recebimento"
+- Opção de atribuir local automaticamente
