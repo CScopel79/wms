@@ -1,0 +1,212 @@
+# WMS INTELIGENTE  
+## Documentação Técnica Completa  
+
+### ÍNDICE
+
+1. Visão Geral  
+2. Stack Tecnológica  
+3. Arquitetura do Sistema  
+4. Estrutura de Banco de Dados  
+5. Microserviços  
+6. Regras de Negócio  
+7. Metodologia de Desenvolvimento  
+8. Cronograma de Projeto  
+9. Integrações Planejadas  
+10. Requisitos Não Funcionais  
+11. Fluxos Operacionais  
+12. Diagramas UML  
+13. Wireframes  
+14. MVP – Mínimo Produto Viável  
+15. Onboarding da Equipe  
+16. Roadmap do Projeto  
+17. Anexos: Script SQL, User Stories, Casos de Uso  
+
+---
+
+## 1. Visão Geral
+
+O **WMS Inteligente** é uma solução modular de gestão de armazéns, projetada para atender indústria, varejo e logística terceirizada. Utiliza tecnologia RFID, IoT e dashboards em tempo real para garantir precisão operacional e conformidade regulatória.
+
+---
+
+## 2. Stack Tecnológica
+
+| Camada | Tecnologia |
+|--------|------------|
+| Frontend | React.js + Material UI |
+| Backend | Node.js / NestJS ou Python / FastAPI |
+| Banco de Dados | SQL Server |
+| IoT | Sensores de temperatura + MQTT/Kafka |
+| RFID | Coletores móveis e portais fixos |
+| Infraestrutura | Docker + Kubernetes + Azure/AWS |
+
+---
+
+## 3. Arquitetura do Sistema
+
+O sistema segue arquitetura em microserviços, com comunicação via REST API e mensageria assíncrona.
+
+#### Componentes Principais:
+- Frontend Web
+- App Mobile
+- Backend API
+- Banco de Dados
+- Serviço RFID
+- Serviço IoT
+- Mensageria (Kafka / MQTT)
+- Integração ERP/TMS/OMS
+
+---
+
+## 4. Estrutura de Banco de Dados
+
+Tabelas principais:
+- Products
+- Lots
+- Locations
+- Inventory
+- RfidTags
+- TemperatureLogs
+- Users
+- Tasks
+- TaskItems
+
+Relacionamentos, chaves estrangeiras e integridade referencial são mantidos.
+
+---
+
+## 5. Microserviços
+
+| Serviço | Função |
+|--------|--------|
+| Auth Service | Autenticação e permissões |
+| Inventory Service | Controle de estoque |
+| RFID Service | Leitura e validação de etiquetas |
+| IoT Service | Monitoramento de temperatura |
+| Task Manager | Gerenciamento de tarefas |
+| Notification Service | Alertas e notificações |
+
+---
+
+## 6. Regras de Negócio
+
+Exemplos:
+- Lotes vencidos não podem ser movimentados
+- Estoque não pode ficar negativo
+- FIFO obrigatório para produtos perecíveis
+- Leitura RFID obrigatória nas operações críticas
+- Temperatura fora da faixa gera alerta imediato
+
+---
+
+## 7. Metodologia de Desenvolvimento
+
+- Scrum Ágil (sprints de 2 semanas)
+- CI/CD via GitHub Actions ou GitLab CI
+- Versionamento semântico
+- Desenvolvimento orientado a testes (TDD)
+
+---
+
+## 8. Cronograma de Projeto
+
+| Fase | Nome da Fase | Duração |
+|------|---------------|---------|
+| 1 | Levantamento de Requisitos | 4 semanas |
+| 2 | Arquitetura e Design | 3 semanas |
+| 3 | MVP (Módulos Básicos) | 10 semanas |
+| 4 | RFID e IoT | 8 semanas |
+| 5 | Integrações | 8 semanas |
+| 6 | Testes e Ajustes | 4 semanas |
+| 7 | Treinamento e Implantação | 4 semanas |
+| Total |  | ~9 meses |
+
+---
+
+## 9. Integrações Planejadas
+
+| Sistema | Finalidade |
+|--------|------------|
+| ERP | Cadastros, estoque, pedidos |
+| TMS | Liberação de carga |
+| OMS | Gestão de pedidos |
+| BI | Dashboards avançados |
+| Dispositivos Móveis | Captura de dados em campo |
+
+---
+
+## 10. Requisitos Não Funcionais
+
+- Disponibilidade: 99,9%
+- Backup diário
+- Logs centralizados
+- Segurança: JWT, HTTPS, criptografia
+
+---
+
+## 11. Fluxos Operacionais
+
+- Recepção com RFID
+- Separação otimizada por rota
+- Expedição validada
+- Inventário cíclico
+- Alertas em tempo real
+
+---
+
+## 12. Diagramas UML
+
+Incluídos no repositório:
+- Diagrama de Arquitetura Geral
+- Diagrama Entidade e Relacionamento (DER)
+- Diagrama de Processos – Recepção com RFID
+- Diagrama de Microserviços
+
+---
+
+## 13. Wireframes
+
+Telas descritas:
+- Dashboard Gerencial
+- Recepção com RFID
+- Separação (Picking)
+- Torre de Controle
+
+---
+
+## 14. MVP – Mínimo Produto Viável
+
+Escopo inicial com:
+- Cadastro de produtos e locais
+- Recepção e expedição
+- Estoque básico
+- RFID simples
+- Dashboard inicial
+
+---
+
+## 15. Onboarding da Equipe
+
+Conteúdo detalhado:
+- Ambiente de desenvolvimento
+- Configuração local
+- Git e versionamento
+- Padrões de código
+- Comunicação entre equipes
+
+---
+
+## 16. Roadmap do Projeto
+
+Etapas completas do projeto, desde levantamento até implantação.
+
+---
+
+## 17. Anexos
+
+Incluídos no repositório:
+- Script SQL Server
+- User Stories
+- Casos de Uso
+- Proposta Comercial
+- Pitch para Investidores
